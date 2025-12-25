@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .book-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .book-card{
+            width: 250px;
+
+        }
+        .book-card img{
+            height: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+        <input type="text" placeholder="Search for books, authors, genres...">
+    </section>
+    <section class="book-grid">
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81iqZ2HHD-L.jpg" alt="Harry Potter and the Sorcerer's Stone cover">
+            <h3>Harry Potter and the Sorcerer's Stone</h3>
+            <p>by J.K. Rowling</p>
+            <div class="tags">
+                <span>Rent</span><span>Fantasy</span>
+            </div>
+            <div class="price">₹30/day | ₹90/week</div>
+            <button>Book Now</button>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
