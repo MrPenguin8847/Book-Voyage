@@ -1,261 +1,756 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="browseByCategory.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav>
-    <div class="navbar-brand">
-      <div class="brand-icon"></div>
-      <div class="brand-name">Book Voyage</div>
-    </div>
-    <div class="navbar-location">
-      <div class="location-icon">
-        <img class="location-img" src="images/location.svg" alt="">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" >
+    <link rel="stylesheet" href="header.css" >
+    <link rel="stylesheet" href="browseByCategory.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-brand">
+        <div class="brand-icon"></div>
+        <div class="brand-name">Book Voyage</div>
       </div>
-      <div class="location-details">
-        <div class="delivery-label">
-          Delivery to
+      <div class="navbar-location">
+        <div class="location-icon">
+          <img class="location-img" src="images/location.svg" alt="">
         </div>
-        <div class="address-text">
-          Mumbai 4000001
-        </div>
-      </div>
-    </div>
-    <div class="navbar-search">
-      <div class="search-container">
-        <img class="search-icon" src="images/search.svg" alt="">
-        <div class="search-wrapper">
-          <input class="search-field" type="text" placeholder="Search for books, authors, genres...">
+        <div class="location-details">
+          <div class="delivery-label">Delivery to</div>
+          <div class="address-text">Mumbai 4000001</div>
         </div>
       </div>
-    </div>
-    <div class="navbar-actions">
-      <div class="cart-button-wrapper">
+      <div class="navbar-search">
+        <div class="search-container">
+          <img class="search-icon" src="images/search.svg" alt="">
+          <div class="search-wrapper">
+            <input
+              class="search-field"
+              type="text"
+              placeholder="Search for books, authors, genres..."
+            >
+          </div>
+        </div>
+      </div>
+      <div class="navbar-actions">
+        <div class="cart-button-wrapper">
+          <button class="action-button">
+            <img class="action-icon" src="images/cart.svg" alt="">
+          </button>
+          <div class="cart-badge">3</div>
+        </div>
         <button class="action-button">
-          <img class="action-icon" src="images/cart.svg" alt="">
+          <img class="action-icon" src="images/profile.svg" alt="">
         </button>
-        <div class="cart-badge">3</div>
       </div>
-      <button class="action-button">
-        <img class="action-icon" src="images/profile.svg" alt="">
-      </button>
-    </div>
-  </nav>  
-  <header>
-    <div class="hero-section">
-      <div class="hero-content">
-        <h1 class="hero-title">Books Dilevered in <br> minutes</h1>
-        <p class="hero-description">Rent or buy your favorite books and get them delivered to your doorstep in minutes. Quick, easy, and affordable!</p>
-        <div class="hero-features">
-          <div class="hero-feature">
-            <img src="images/clock.svg" alt="">
-            <div class="feature-text">
-              10-15 mins delivery
+    </nav>
+    <header>
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Books Dilevered in <br>
+            minutes
+          </h1>
+          <p class="hero-description">
+            Rent or buy your favorite books and get them delivered to your
+            doorstep in minutes. Quick, easy, and affordable!
+          </p>
+          <div class="hero-features">
+            <div class="hero-feature">
+              <img src="images/clock.svg" alt="" >
+              <div class="feature-text">10-15 mins delivery</div>
+            </div>
+            <div class="hero-feature">
+              <img src="images/truck.svg" alt="" >
+              <div class="feature-text">Free delivery over ₹500</div>
             </div>
           </div>
-          <div class="hero-feature">
-            <img src="images/truck.svg" alt="">
-            <div class="feature-text">
-              Free delivery over ₹500
-            </div>
-          </div>
+          <button class="hero-browse-btn">Browse Books</button>
         </div>
-        <button class="hero-browse-btn">Browse Books</button>
-      </div>
-      <div class="hero-image-wrapper">
-        <img class="hero-image" src="https://images.unsplash.com/photo-1566314748684-1e536fe1a148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib29rcyUyMHNoZWxmJTIwbGlicmFyeXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
-      </div>
-    </div>
-  </header>
-  <section >
-    <div class="category-section">
-      <h2>Browse by categories</h2>
-      <div class="category-grid">
-        <div class="category-card">
-        <div class="category-icon-wrapper">
-          <img class="category-icon" src="images/fiction.svg" alt="">
-        </div>
-        <div class="category-label">Fiction</div>
-        </div>
-        <div class="category-card">
-          <div class="category-icon-wrapper"><img class="category-icon" src="images/non-fiction.svg" alt=""></div>
-          <div class="category-label">Non-Fiction</div>
-        </div>
-        <div class="category-card">
-          <div class="category-icon-wrapper"><img class="category-icon" src="images/romance.svg" alt=""></div>
-          <div class="category-label">Romance</div>
-        </div>
-        <div class="category-card">
-          <div class="category-icon-wrapper"><img class="category-icon" src="images/bestsellers.svg" alt=""></div>
-          <div class="category-label">Bestsellers</div>
-        </div>
-        <div class="category-card">
-          <div class="category-icon-wrapper"><img class="category-icon" src="images/academic.svg" alt=""></div>
-          <div class="category-label">Academic</div>
-        </div>
-        <div class="category-card">
-          <div class="category-icon-wrapper"><img class="category-icon" src="images/new-arrivals.svg" alt=""></div>
-          <div class="category-label">New-Arrivals</div>
+        <div class="hero-image-wrapper">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1566314748684-1e536fe1a148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxib29rcyUyMHNoZWxmJTIwbGlicmFyeXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            alt=""
+          >
         </div>
       </div>
-    </div>
-    <div class="bestsellers-section">
-      <div class="bestsellers-header">
-        <div class="bestsellers-icon"></div>
-        <h2>
-          Bestsellers
-        </h2>
-      </div>
-      <div class="bestsellers-grid">
-        <div class="book-card">
-          <div class="book-cover">
-            <img src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+    </header>
+    <section>
+      `
+      <div class="category-section">
+        <h2>Browse by categories</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <div class="category-icon-wrapper">
+              <img class="category-icon" src="images/fiction.svg" alt="">
+            </div>
+            <div class="category-label">Fiction</div>
           </div>
-          <div class="book-info">
-            <div class="book-title">Atomic Habits
-              <span class="book-author">
-                by James Clear
-              </span>
+          <div class="category-card">
+            <div class="category-icon-wrapper">
+              <img class="category-icon" src="images/non-fiction.svg" alt="">
             </div>
-            <div class="book-rating">
-              4.8
-            </div>
-            <div class="price-label-row">
-              <div>Rent</div>
-              <div>Buy</div>
-            </div>
-            <div class="price-row">
-              <div class="rental-price">₹49/Week</div>
-              <div class="book-price">₹399</div>
-            </div>
-            <div class="action-buttons">
-              <button class="rental-button">Rent</button>
-              <button class="purchase-button"><img class="purchase-button-icon" src="images/buy-cart.svg" alt="">Buy</button>
-            </div>
+            <div class="category-label">Non-Fiction</div>
           </div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover">
-            <img src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+          <div class="category-card">
+            <div class="category-icon-wrapper">
+              <img class="category-icon" src="images/romance.svg" alt="">
+            </div>
+            <div class="category-label">Romance</div>
           </div>
-          <div class="book-info">
-            <div class="book-title">Atomic Habits
-              <span class="book-author">
-                by James Clear
-              </span>
+          <div class="category-card">
+            <div class="category-icon-wrapper">
+              <img class="category-icon" src="images/bestsellers.svg" alt="">
             </div>
-            <div class="book-rating">
-              4.8
-            </div>
-            <div class="price-label-row">
-              <div>Rent</div>
-              <div>Buy</div>
-            </div>
-            <div class="price-row">
-              <div class="rental-price">₹49/Week</div>
-              <div class="book-price">₹399</div>
-            </div>
-            <div class="action-buttons">
-              <button class="rental-button">Rent</button>
-              <button class="purchase-button"><img class="purchase-button-icon" src="images/buy-cart.svg" alt="">Buy</button>
-            </div>
+            <div class="category-label">Bestsellers</div>
           </div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover">
-            <img src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
+          <div class="category-card">
+            <div class="category-icon-wrapper">
+              <img class="category-icon" src="images/academic.svg" alt="">
+            </div>
+            <div class="category-label">Academic</div>
           </div>
-          <div class="book-info">
-            <div class="book-title">Atomic Habits
-              <span class="book-author">
-                by James Clear
-              </span>
+          <div class="category-card">
+            <div class="category-icon-wrapper">
+              <img class="category-icon" src="images/new-arrivals.svg" alt="">
             </div>
-            <div class="book-rating">
-              4.8
-            </div>
-            <div class="price-label-row">
-              <div>Rent</div>
-              <div>Buy</div>
-            </div>
-            <div class="price-row">
-              <div class="rental-price">₹49/Week</div>
-              <div class="book-price">₹399</div>
-            </div>
-            <div class="action-buttons">
-              <button class="rental-button">Rent</button>
-              <button class="purchase-button"><img class="purchase-button-icon" src="images/buy-cart.svg" alt="">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover">
-            <img src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
-          </div>
-          <div class="book-info">
-            <div class="book-title">Atomic Habits
-              <span class="book-author">
-                by James Clear
-              </span>
-            </div>
-            <div class="book-rating">
-              4.8
-            </div>
-            <div class="price-label-row">
-              <div>Rent</div>
-              <div>Buy</div>
-            </div>
-            <div class="price-row">
-              <div class="rental-price">₹49/Week</div>
-              <div class="book-price">₹399</div>
-            </div>
-            <div class="action-buttons">
-              <button class="rental-button">Rent</button>
-              <button class="purchase-button"><img class="purchase-button-icon" src="images/buy-cart.svg" alt="">Buy</button>
-            </div>
-          </div>
-        </div>
-        <div class="book-card">
-          <div class="book-cover">
-            <img src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="">
-          </div>
-          <div class="book-info">
-            <div class="book-title">Atomic Habits
-              <span class="book-author">
-                by James Clear
-              </span>
-            </div>
-            <div class="book-rating">
-              4.8
-            </div>
-            <div class="price-label-row">
-              <div>Rent</div>
-              <div>Buy</div>
-            </div>
-            <div class="price-row">
-              <div class="rental-price">₹49/Week</div>
-              <div class="book-price">₹399</div>
-            </div>
-            <div class="action-buttons">
-              <button class="rental-button">Rent</button>
-              <button class="purchase-button"><img class="purchase-button-icon" src="images/buy-cart.svg" alt="">Buy</button>
-            </div>
+            <div class="category-label">New-Arrivals</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="benefits">
+      <div class="bestsellers-section">
+        <div class="bestsellers-header">
+          <div class="bestsellers-icon"></div>
+          <h2>Bestsellers</h2>
+        </div>
+        <div class="bestsellers-grid">
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="bestseller-tag">Bestseller</div>
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="">
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="bestseller-tag">Bestseller</div>
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="">
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="">
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="" >
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="" >
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-section">
+        <div class="lightning-fast-delivery">
+          <div class="feature-img-container">
+            <img
+              class="feature-img"
+              src="images/lightning-fast-delivery.svg"
+              alt=""
+            >
+          </div>
+          <div class="feature-detail">
+            <div class="feature-heading">Lightning Fast Delivery</div>
+            <div class="feature-content">Get your books in 10-15 minutes</div>
+          </div>
+        </div>
+        <div class="quality-assured">
+          <div class="feature-img-container">
+            <img class="feature-img" src="images/quality-assured.svg" alt="" >
+          </div>
+          <div class="feature-detail">
+            <div class="feature-heading">Quality Assured</div>
+            <div class="feature-content">All books are carefully inspected</div>
+          </div>
+        </div>
+        <div class="easy-returns">
+          <div class="feature-img-container">
+            <img class="feature-img" src="images/easy-return.svg" alt="" >
+          </div>
+          <div class="feature-detail">
+            <div class="feature-heading">Easy Returns</div>
+            <div class="feature-content">
+              Return within 7 days, no questions asked
+            </div>
+          </div>
+        </div>
+        <div class="free-delivery">
+          <div class="feature-img-container">
+            <img class="feature-img" src="images/free-dilevery.svg" alt="">
+          </div>
+          <div class="feature-detail">
+            <div class="feature-heading">Free Delivery</div>
+            <div class="feature-content">On orders above ₹500</div>
+          </div>
+        </div>
+      </div>
+      <div class="new-arrivals">
+        <h2 class="new-arrivals-heading">New Arrivals</h2>
 
-    </div>  
-  </section>
-</body>
+        <div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="">
+              <div class="bestseller-tag">Bestseller</div>
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="">
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="bestseller-tag">Bestseller</div>
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="" >
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="bestseller-tag">Bestseller</div>
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="">
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="bestseller-tag">Bestseller</div>
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="" >
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img
+                src="https://images.unsplash.com/photo-1707142979946-a745d1d0092c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGNvZmZlZXxlbnwxfHx8fDE3Njc1OTU2NjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt=""
+              >
+              <div class="bestseller-tag">Bestseller</div>
+              <div class="delivery-time">
+                <img src="images/clock2.svg" alt="">
+                10 mins
+              </div>
+              <button class="whishlist-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-heart w-4 h-4 text-gray-600"
+                  data-fg-biso4="1.17:1.2648:/src/app/components/BookCard.tsx:33:11:974:43:e:Heart::::::DhJl"
+                >
+                  <path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="book-info">
+              <div class="book-title">
+                Atomic Habits
+                <span class="book-author"> by James Clear </span>
+              </div>
+              <div class="book-rating">4.8</div>
+              <div class="price-label-row">
+                <div>Rent</div>
+                <div>Buy</div>
+              </div>
+              <div class="price-row">
+                <div class="rental-price">₹49/Week</div>
+                <div class="book-price">₹399</div>
+              </div>
+              <div class="action-buttons">
+                <button class="rental-button">Rent</button>
+                <button class="purchase-button">
+                  <img
+                    class="purchase-button-icon"
+                    src="images/buy-cart.svg"
+                    alt=""
+                  >Buy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
