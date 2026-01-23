@@ -1,21 +1,24 @@
-.category-section{
+.category-section {
     margin-right: 8vw;
     margin-left: 8vw;
 }
-.category-grid{
+
+.category-grid {
     display: flex;
     justify-content: space-between;
     padding-left: 3.75rem;
     padding-right: 3.75rem;
 }
-.category-card{
+
+.category-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
-.category-icon-wrapper{
+
+.category-icon-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,54 +26,75 @@
     width: 4rem;
 }
 
-.category-icon{
+.category-icon {
     height: 2rem;
     width: auto;
 }
-.category-card:hover{
+
+.category-card:hover {
     transform: scale(1.1);
 }
-.category-label{
+
+.category-label {
     font-size: 0.875rem;
     font-weight: 500;
 }
-.bestsellers-section{
+
+.bestsellers-section {
     margin-right: 8vw;
-    margin-left: 8vw;   
+    margin-left: 8vw;
 }
-.bestsellers-header{
+
+.bestsellers-header {
     display: flex;
     gap: 7px;
     align-items: center;
+    justify-content: space-between;
 }
-.bestsellers-icon{
-    padding-bottom: 5px;
-}
-.bestsellers-icon::before{
-    content: '📈';
+
+.bestsellers-heading::before {
+    content: '📈 ';
     font-size: 1.6rem;
 }
-.bestsellers-grid{
+
+.bestsellers-header a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4px;
+    text-decoration: none;
+    transition: text-decoration ease 0.3s;
+}
+
+.bestsellers-header a:hover {
+    text-decoration: underline;
+}
+
+.bestsellers-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1vw;
 }
-.book-card{
+
+.book-card {
     display: flex;
     flex-direction: column;
     padding: 16px;
 }
-.book-cover{
+
+.book-cover {
     display: flex;
     height: 20vw;
     width: auto;
     margin-bottom: 15px;
     position: relative;
 }
-.book-cover img{
+
+.book-cover img {
     overflow: hidden;
     border-radius: 12px;
 }
+
 .bestseller-tag {
     position: absolute;
     top: 10px;
@@ -82,10 +106,11 @@
     padding: 3px 5px;
     border-radius: 8px;
 }
-.delivery-time{
+
+.delivery-time {
     position: absolute;
     bottom: 10px;
-    left: 10px; 
+    left: 10px;
     color: black;
     background-color: white;
     border-radius: 6px;
@@ -96,10 +121,12 @@
     font-size: 12px;
     gap: 3px;
 }
-.delivery-time img{
+
+.delivery-time img {
     height: 12px;
 }
-.whishlist-button{
+
+.whishlist-button {
     background-color: white;
     border-radius: 30px;
     border: none;
@@ -115,58 +142,71 @@
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
+
 .whishlist-button svg {
     opacity: 0.7;
 }
-.book-cover:hover .whishlist-button{
+
+.book-cover:hover .whishlist-button {
     opacity: 1;
 }
-.book-info{
+
+.book-info {
     line-height: 24px;
 }
-.book-title{
+
+.book-title {
     font-weight: 600;
     display: flex;
     flex-direction: column;
     font-size: 16px;
 }
-.book-author{
+
+.book-author {
     font-weight: normal;
     font-size: 13px;
     opacity: 0.7;
 }
-.book-rating::before{
+
+.book-rating::before {
     content: "★";
     color: yellow;
     font-size: 14px;
 }
-.book-rating{
+
+.book-rating {
     padding-bottom: 10px;
     font-weight: bold;
 }
-.price-label-row{
+
+.price-label-row {
     display: flex;
     justify-content: space-between;
     opacity: 0.7;
     font-size: 13px;
 }
-.price-row{
+
+.price-row {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     padding-bottom: 10px;
 }
-.rental-price{
+
+.rental-price {
     color: lightgreen;
 }
-.action-buttons{
+
+.action-buttons {
     display: flex;
     gap: 10px;
 }
-.rental-button{
+
+.rental-button {
     background-color: white;
 }
-.purchase-button{
+
+.purchase-button {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -174,7 +214,8 @@
     background-color: oklch(0.546 0.245 262.881);
     color: white;
 }
-.action-buttons button{
+
+.action-buttons button {
     flex: 1;
     padding: 4px 10px;
     border-radius: 10px;
@@ -183,58 +224,112 @@
     border: none;
     cursor: pointer;
 }
-.purchase-button-icon{
+
+.purchase-button-icon {
     height: 1.2rem;
     margin-right: 0.5rem;
 }
-.feature-section{
+
+.feature-section {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     padding: 4rem 0px;
     margin-right: 7rem;
     margin-left: 7rem;
 }
-.lightning-fast-delivery, .quality-assured, .easy-returns, .free-delivery {
+
+.lightning-fast-delivery,
+.quality-assured,
+.easy-returns,
+.free-delivery {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 24px;
 }
-.feature-heading{
+
+.feature-heading {
     display: flex;
     justify-content: center;
     font-weight: bold;
 }
-.feature-detail{
+
+.feature-detail {
     line-height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.feature-content{
+
+.feature-content {
     font-size: 14px;
     opacity: 0.7;
     display: flex;
     justify-content: center;
     text-align: center;
 }
-.feature-img-container{
+
+.feature-img-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 64px;
     width: 64px;
 }
-.feature-img{
+
+.feature-img {
     height: 32px;
     width: 32px;
 }
-.new-arrivals{
+
+.new-arrivals {
     margin-left: 8vw;
     margin-right: 8vw;
 }
-.new-arrivals-heading::before{
+
+.new-arrivals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-arrivals-header a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4px;
+    text-decoration: none;
+    transition: text-decoration ease 0.3s;
+}
+
+.new-arrivals-header a:hover {
+    text-decoration: underline;
+}
+
+.view-all-img {
+    display: flex;
+    align-items: center;
+}
+
+.new-arrivals-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-arrivals-heading::before {
     content: '✨ ';
     font-size: 24px;
+}
+
+.new-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: oklch(0.723 0.219 149.579);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 5px;
+    border-radius: 8px;
 }
