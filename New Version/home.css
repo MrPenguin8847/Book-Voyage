@@ -1,6 +1,6 @@
 body {
-  font-family: Roboto, Arial, sans-serif;
-  margin: 0px;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  margin: 0;
   padding-top: 5.625rem;
 }
 
@@ -10,9 +10,9 @@ nav {
   justify-content: space-between;
   padding: 0.5rem 1rem 0.75rem;
   position: fixed;
-  left: 0px;
-  right: 0px;
-  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
   background-color: white;
   z-index: 100;
 }
@@ -99,7 +99,7 @@ nav {
   padding: 0.25rem 0.75rem 0.25rem 2.1875rem;
   height: 1.875rem;
   width: 30vw;
-  min-width: 0px;
+  min-width: 0;
 
 }
 
@@ -150,5 +150,5 @@ nav {
   border-radius: 50%;
   position: absolute;
   top: -0.3125rem;
-  right: 0px;
+  right: 0;
 }

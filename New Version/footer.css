@@ -1,0 +1,102 @@
+footer{
+    background-color: oklch(0.21 0.034 264.665);
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    color: white;
+    column-gap: 2rem;
+}
+.footer-brand {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.footer-brand-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-brand-icon::before {
+  content: "📚 ";
+  font-size: 1.4375rem;
+  padding: 0.3125rem;
+}
+
+.footer-brand-name {
+  font-weight: bolder;
+  font-size: larger;
+}
+.footer-brand-discription{
+    color: oklch(0.707 0.022 261.325);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.quick-links{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.quick-links h4{
+    margin-top: 0;
+    margin-bottom: 1.1875rem;
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: oklch(0.707 0.022 261.325);
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    transition: color ease 0.3s;
+}
+.quick-links a:hover{
+    color: white;    
+}
+.categories{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.categories h4{
+    margin-top: 0;
+    margin-bottom: 1.1875rem;
+}
+.categories a{
+    text-decoration: none;
+    color: oklch(0.707 0.022 261.325);
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+    transition: color ease 0.3s;
+}
+.categories a:hover{
+    color: white;
+}
+.connect-with-us{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.connect-with-us h4{
+    margin-top: 0px;
+    margin-bottom: 19px;
+}
+.connect-links-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.75rem;
+}
+.connect-links{
+    background-color: oklch(0.278 0.033 256.848);
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: color ease 0.3s;
+}
+.connect-links:hover{
+    background-color: oklch(0.373 0.034 259.733);
+}
+.connect-links svg{
+    height: 1.25rem;
+    width: 1.25rem;
+}
