@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: transform ease 0.3s;
 }
 
 .category-icon-wrapper {
