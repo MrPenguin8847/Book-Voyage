@@ -35,7 +35,7 @@ footer{
 .footer-brand-discription{
     color: oklch(0.707 0.022 261.325);
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 1.45;
 }
 .quick-links{
     flex: 1;
@@ -51,7 +51,7 @@ footer{
     text-decoration: none;
     color: oklch(0.707 0.022 261.325);
     font-size: 0.875rem;
-    line-height: 1.5625rem;
+    line-height: 1.7625;
     transition: color ease 0.3s;
 }
 .quick-links a:hover{
@@ -70,7 +70,7 @@ footer{
     text-decoration: none;
     color: oklch(0.707 0.022 261.325);
     font-size: 0.875rem;
-    line-height: 1.5625rem;
+    line-height: 1.825;
     transition: color ease 0.3s;
 }
 .categories a:hover{

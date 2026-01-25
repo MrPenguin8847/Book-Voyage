@@ -17,14 +17,14 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  line-height: 1.5625rem;
+  line-height: 1.5625;
   justify-content: center;
 }
 
 .hero-title {
   font-size: 3rem;
   margin: 0;
-  line-height: 3.125rem;
+  line-height: 1.125;
 }
 
 .hero-description {
